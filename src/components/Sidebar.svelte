@@ -21,7 +21,7 @@
 
 <aside class="absolute items-center right-0 top-16 h-3/4 rounded-sm w-64 2xl:w-96 border-b border-l border-[#c7b9f8] border-t-[#c7b9f8] bg-[#fefbf6] overflow-y-auto shadow-lg border-gray-200 text-sm flex flex-col p-4">
 	<div class="my-4 text-lg font-semibold text-[#180042]">Drag and Drop the Components</div>
-	<div class="grid grid-cols-2 gap-4 items-center">
+	<div class="grid grid-cols-1 xl:grid-cols-2 gap-4 items-center">
 		{#each nodes as node}
 			<DraggableNode
 				nodeType={node.type}

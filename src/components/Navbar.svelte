@@ -2,10 +2,10 @@
 	import { FileText, GithubIcon } from 'lucide-svelte';
 </script>
 
-<nav class="font-class p-3 text-[#180042] shadow shadow-[#c7b9f8] fixed top-0 left-0 right-0 z-10">
-	<div class="flex items-center px-16">
+<nav class="font-class py-4 md:p-3 text-[#180042] shadow shadow-[#c7b9f8] fixed top-0 left-0 right-0 z-10">
+	<div class="flex items-center px-8 lg:px-16">
 		<div class="flex items-center mr-auto">
-			<a href="/" class="text-2xl font-bold flex items-center">
+			<a href="/" class="text-lg xl:text-2xl font-bold flex items-center">
 				Flow Ops
 			</a>
 		</div>

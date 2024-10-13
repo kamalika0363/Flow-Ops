@@ -46,27 +46,31 @@
 
 	const fitViewOptions = {
 		minZoom: 0.1,
-		maxZoom: 0.9,
+		maxZoom: 0.9
 	};
 </script>
 
 <main class="h-screen w-screen flex relative">
+	<div class="hidden lg:block">
 		<CodeGenerated />
+	</div>
 
 	<div class="flex-grow h-full">
 		<SvelteFlow
-			{nodes}
+			class="h-full"
 			{edges}
 			fitView={true}
 			fitViewOptions={fitViewOptions}
+			{nodes}
 			on:dragover={onDragOver}
 			on:drop={onDrop}
-			class="h-full"
 		>
 			<Controls />
 			<Background bgColor='#fefbf6' variant={BackgroundVariant.Dots} />
 		</SvelteFlow>
 	</div>
 
+	<div class="hidden lg:block">
 		<Sidebar />
+	</div>
 </main>
